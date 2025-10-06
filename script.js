@@ -1,4 +1,22 @@
 document.addEventListener("DOMContentLoaded", () => {
+  // --- Mobile Menu Toggle ---
+  const hamburger = document.querySelector(".hamburger");
+  const navMenu = document.querySelector(".nav-menu");
+
+  // Toggle mobile menu
+  hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+  });
+
+  // Close mobile menu when clicking a nav link
+  document.querySelectorAll(".nav-menu a").forEach((link) =>
+    link.addEventListener("click", () => {
+      hamburger.classList.remove("active");
+      navMenu.classList.remove("active");
+    })
+  );
+
   // --- Smooth Scrolling untuk Tautan Navigasi ---
   // Fungsi ini membuat halaman bergulir dengan mulus ke section yang dituju
   // saat tautan di menu navigasi di-klik.
