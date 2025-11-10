@@ -18,6 +18,8 @@
 <body>
 
     <header id="beranda" class="hero-section">
+        <div class="hero-bg" aria-hidden="true"></div>
+        <div class="hero-overlay" aria-hidden="true"></div>
         <div class="container">
             <nav class="navbar">
                 <a href="#beranda" class="nav-logo">LPK GLOBAL MANDIRI</a>
@@ -35,19 +37,25 @@
             </nav>
             <div class="hero-content">
                 <div class="hero-text">
-                    <h1>Belajar Setir Mobil dengan Percaya Diri & Aman bersama Bina Mandiri</h1>
-                    <p>Ambil kendali dan mulailah perjalanan Anda menuju kebebasan di jalan raya. Instruktur kami yang
-                        sabar dan berpengalaman siap membimbing Anda menjadi pengemudi yang handal.</p>
-                    <a href="#paket-kursus" class="btn btn-primary">Daftar Kursus</a>
+                    <h1><span class="hero-title-rotating">Belajar Setir Mobil dengan Percaya Diri & Aman bersama Global
+                            Mandiri</span></h1>
+                    <p>Ambil kendali dan mulailah mengemudi yang aman, terkendali untuk diri sendiri dan orang lain
+                        serta lincah dijalan raya ( Defensif Driving ).</p>
+                    <!-- rotating promo text (will be updated by script.js) -->
+                    <p class="hero-promo" aria-live="polite"></p>
+                    <div style="display:flex;gap:14px;align-items:center;margin-top:18px;">
+                        <a href="#paket-kursus" class="btn btn-primary">Lihat Kursus</a>
+                        <a href="https://wa.me/6287838707128" class="btn btn-whatsapp" target="_blank"
+                            rel="noopener noreferrer">
+                            <i class="fa-brands fa-whatsapp" aria-hidden="true" style="margin-right:8px"></i>
+                            Daftar Sekarang
+                        </a>
+                    </div>
                     <div class="social-icons">
                         <a href="#"><i class="fa-brands fa-instagram"></i></a>
                         <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
                         <a href="#"><i class="fa-brands fa-tiktok"></i></a>
-                        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
                     </div>
-                </div>
-                <div class="hero-image">
-                    <img src="assets/Mobil_01.png" alt="Mobil Kursus Mengemudi">
                 </div>
             </div>
         </div>
@@ -83,7 +91,7 @@
                             <li><i class="fas fa-check-circle"></i> Pengurusan SIM A</li>
                         </ul>
                         <p class="price">Mulai Rp. 400.000</p>
-                        <a href="#" class="btn btn-secondary">Detail Kursus</a>
+                        <a href="paket-stir.html" class="btn btn-secondary">Lihat Paket Lainnya</a>
                     </div>
                     <div class="package-card">
                         <div class="card-header">
@@ -99,7 +107,7 @@
                             <li><i class="fas fa-check-circle"></i> Sertifikat Kompetensi</li>
                         </ul>
                         <p class="price">Mulai Rp. 800.000</p>
-                        <a href="#" class="btn btn-secondary">Detail Kursus</a>
+                        <a href="paket-komputer.html" class="btn btn-secondary">Lihat Paket Lainnya</a>
                     </div>
                     <div class="package-card">
                         <div class="card-header">
@@ -115,7 +123,7 @@
                             <li><i class="fas fa-check-circle"></i> Sertifikat Keahlian</li>
                         </ul>
                         <p class="price">Mulai Rp. 1.200.000</p>
-                        <a href="#" class="btn btn-secondary">Detail Kursus</a>
+                        <a href="paket-menjahit.html" class="btn btn-secondary">Lihat Paket Lainnya</a>
                     </div>
                     <div class="package-card">
                         <div class="card-header">
@@ -131,7 +139,7 @@
                             <li><i class="fas fa-check-circle"></i> Sertifikat Profesi</li>
                         </ul>
                         <p class="price">Mulai Rp. 1.500.000</p>
-                        <a href="#" class="btn btn-secondary">Detail Kursus</a>
+                        <a href="paket-otomotif.html" class="btn btn-secondary">Lihat Paket Lainnya</a>
                     </div>
                 </div>
             </div>
@@ -144,32 +152,36 @@
                     <div class="why-us-card">
                         <i class="fas fa-chalkboard-teacher"></i>
                         <h3>Instruktur Berpengalaman & Sabar</h3>
-                        <p>Kami mengerti kegugupan pengemudi pemula. Instruktur kami dilatih untuk membimbing dengan
-                            sabar hingga Anda mahir.</p>
+                        <p>Tim pengajar kami adalah praktisi ahli di bidangnya. Mereka terlatih untuk membimbing dengan
+                            sabar, memastikan Anda menguasai materi dari dasar hingga mahir, terlepas dari tingkat
+                            kesulitan awal Anda.`</p>
                     </div>
                     <div class="why-us-card">
                         <i class="fas fa-clock"></i>
                         <h3>Jadwal Fleksibel</h3>
-                        <p>Punya kesibukan lain? Kami menyediakan jadwal latihan yang bisa disesuaikan dengan waktu
-                            luang Anda, termasuk akhir pekan.</p>
+                        <p>Kami mengerti kesibukan Anda. Tersedia pilihan jadwal pelatihan yang dapat disesuaikan dengan
+                            waktu luang Anda, termasuk sesi malam atau akhir pekan, sehingga belajar tidak mengganggu
+                            aktivitas utama.</p>
                     </div>
                     <div class="why-us-card">
                         <i class="fas fa-tachometer-alt"></i>
                         <h3>Cepat Mahir</h3>
-                        <p>Dengan metode pengajaran yang efektif dan fokus pada praktik langsung, kami membantu Anda
-                            menguasai mobil lebih cepat.</p>
+                        <p>Kami menggunakan teknik pengajaran yang paling efektif dan materi yang padat, dirancang untuk
+                            membantu Anda menguasai kompetensi inti di bidang Anda secara cepat dan siap diterapkan
+                            segera.</p>
                     </div>
                     <div class="why-us-card">
                         <i class="fas fa-shield-alt"></i>
-                        <h3>Fokus Pada Keamanan (Safety Driving)</h3>
-                        <p>Prioritas utama kami adalah keselamatan. Anda akan diajarkan teknik mengemudi yang aman,
-                            bukan hanya sekadar bisa jalan.</p>
+                        <h3>Fokus pada Standar dan Keselamatan Kerja</h3>
+                        <p>Prioritas kami adalah Anda menjadi terampil dan aman. Anda akan diajarkan teknik/prosedur
+                            yang sesuai standar industri, termasuk fokus pada Keselamatan Berkendara (Stir Mobil) atau
+                            Keselamatan Kerja (Menjahit, Komputer, Otomotif).</p>
                     </div>
                     <div class="why-us-card">
                         <i class="fas fa-book"></i>
                         <h3>Materi Terpadu (Teori & Praktik)</h3>
-                        <p>Tidak hanya belajar di jalan, Anda juga akan dibekali pemahaman rambu lalu lintas dan etika
-                            berkendara yang benar.</p>
+                        <p>Kami menggabungkan pengetahuan dasar yang kuat (teori) dengan latihan intensif di lapangan
+                            (praktik), memastikan Anda memiliki pemahaman menyeluruh tentang bidang Anda.</p>
                     </div>
                     <div class="why-us-card">
                         <i class="fas fa-map-marker-alt"></i>
